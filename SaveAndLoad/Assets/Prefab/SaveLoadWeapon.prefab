@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222150271121160706}
   - component: {fileID: 114982838892994770}
   - component: {fileID: 114200812822755646}
+  - component: {fileID: 114604060948778042}
   m_Layer: 5
   m_Name: BtnAddWeapon
   m_TagString: Untagged
@@ -232,6 +233,7 @@ GameObject:
   - component: {fileID: 222860503937097588}
   - component: {fileID: 114057368031002116}
   - component: {fileID: 114150063109709350}
+  - component: {fileID: 114097197087352552}
   m_Layer: 5
   m_Name: Btn_AddAttackCurrentWeapon
   m_TagString: Untagged
@@ -373,6 +375,7 @@ GameObject:
   - component: {fileID: 222516595062882322}
   - component: {fileID: 114652711934590716}
   - component: {fileID: 114608351783997134}
+  - component: {fileID: 114388260391761260}
   m_Layer: 5
   m_Name: BtnPrevious
   m_TagString: Untagged
@@ -425,6 +428,7 @@ GameObject:
   - component: {fileID: 222818204927430872}
   - component: {fileID: 114862951302898232}
   - component: {fileID: 114352152980264762}
+  - component: {fileID: 114276413046553578}
   m_Layer: 5
   m_Name: BtnNext
   m_TagString: Untagged
@@ -707,6 +711,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114097197087352552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1278361576301522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421c607bb44553f45bba10b015e7dae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114104535412746642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -849,7 +864,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114057368031002116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114097197087352552}
+        m_MethodName: IncreaseAttackWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114150571973450386
@@ -1004,7 +1030,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114982838892994770}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114604060948778042}
+        m_MethodName: IncreaseWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114221018384946006
@@ -1149,6 +1186,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 049d4088eabffae4e841c319ea10e14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114276413046553578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1665792789627714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d0e2d1d7a9e7e418904b1f0a462ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114336376738804454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1241,7 +1289,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114862951302898232}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114276413046553578}
+        m_MethodName: NextWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114359684400007242
@@ -1296,6 +1355,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114388260391761260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501825594878910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0989fab3115e64946a360df63d527fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114403735644972994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1474,6 +1544,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Add defense
+--- !u!114 &114604060948778042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1025987260290834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926afcdb2ea97c449be9a2490bb6b098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114608351783997134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1512,7 +1593,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114652711934590716}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114388260391761260}
+        m_MethodName: PreviousWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114652711934590716
